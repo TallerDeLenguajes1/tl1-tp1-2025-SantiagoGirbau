@@ -11,8 +11,6 @@ Los archivos ignorados suelen ser artefactos de compilación y archivos generado
 - Archivos ocultos del sistema, como es el caso de .DS_Store o Thumbs.db.
 - Archivos personales de configuración de IDE como, por ejemplo, .idea/workspace.xml.
 
-    **Para agregar o cambiar** tu .gitignore global, ejecuta el siguiente comando en la terminal:
-
-_git config --global core.excludesfile ~/.gitignore_global_
+    **Para agregar o cambiar** tu .gitignore debes crear un archivo con el nombre ".gitignore" y dentro de él escribir el nombre o las extensiones de los archivos que quieras ignorar.
 
 
