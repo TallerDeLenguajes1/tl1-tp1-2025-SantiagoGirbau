@@ -22,7 +22,7 @@ Los archivos ignorados suelen ser artefactos de compilación y archivos generado
 **g)**
 
 **i)**
-La al asignarle al puntero la dirección de memoria de la variable, estamos haciendo que el mismo "apunte" hacia la variable.
+Al asignarle al puntero la dirección de memoria de la variable, estamos haciendo que el mismo "apunte" hacia la variable.
 Esto hace que el contenido del mismo sea la dirección de memoria de la variable y por eso tienen el mismo valor.
 
 **ii)**
