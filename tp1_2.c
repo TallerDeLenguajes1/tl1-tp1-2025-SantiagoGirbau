@@ -29,13 +29,20 @@ int main(){
 
     // Apartado d)
     int a, b;
+    
     printf("Escriba un valor de A: ");
     scanf("%i", &a);
     printf("\nEscriba un valor de B: ");
     scanf("%i", &b);
-    printf("Antes de invertir: A=%i , B=%i",a,b);
+    printf("Antes de invertir: A= ");
+    mostrar(&a);
+    printf("y B= ");
+    mostrar(&b);
     Invertir(&a, &b);
-    printf("\nUna vez invertidos: A=%i, B=%i", a, b);
+    printf("Luego de invertir: A= ");
+    mostrar(&a);
+    printf("y B= ");
+    mostrar(&b);
 
     //Apartado e)
     printf("\nAhora vamos a ordenar:\n");
@@ -44,9 +51,12 @@ int main(){
     printf("\nEscriba un valor de B: ");
     scanf("%i", &b);
     orden(&a,&b);
-    printf("\nEl mayor es: A=%i, y el menor es B=%i\n", a, b);
+    printf("\nEl mayor es: A= ");
+    mostrar(&a);
+    printf("y el menor es B= ");
+    mostrar(&b);
 
-    scanf("%i", &y);
+    scanf("%i", &y); //Para que no se cierre la consola
     
 }
 
@@ -63,7 +73,7 @@ void cuadradoProc(int *dirX){
 
 void mostrar(int *dirMostrar){
 
-    printf("Esta función recibió el valor: %i \n", *dirMostrar);
+    printf("Valor: %i \n", *dirMostrar);
     printf("Su dirección de memoria es %i\n", dirMostrar);
 
 }
@@ -77,6 +87,6 @@ void Invertir(int *dirA, int *dirB){
 
 void orden(int *a,int *b){
     if(*a<*b){
-        Invertir(&(*a), &(*b));
+        Invertir(&(*a), &(*b)); //Reutilizo la función de invertir :)
     }
 }
